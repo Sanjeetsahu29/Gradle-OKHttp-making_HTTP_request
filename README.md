@@ -127,7 +127,16 @@ GET https://fakestoreapi.com/products/1
 No API key or authentication required.
 
 ---
+## Next thing to learn, Json parsing to Java Object (Serialisation and Deserialisation)
+Right now, our code print the API response as a raw JSON string.
+This is just text. We can't do anything useful with it like product.getPrice() or product.getTitle(). 
+That's where JSON Parsing Libraries comes in.
+### The Main Players
+**Gson - by Google**
+The most beginner friendly.
 
-## License
+**Moshi - By Square (same people who made OkHttp)**
+More modern than Gson, works really well with OkHttp since they're from the same company. Slightly less beginner tutorials available.
 
-This project is open source and available under the [MIT License](LICENSE).
+**Jackson - By FasterXML**
+The most powerful and widely used in enterprise/production backends. Spring Boot uses it by default. A bit more complex to set up.
